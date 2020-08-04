@@ -1,9 +1,9 @@
-package com.playground
+package com.playground.chimney
 
 import io.scalaland.chimney.dsl._
 
 object Main extends App {
-  import com.playground.Domains._
+  import Domains._
   println("─" * 100)
 
   //Normal Transformation
