@@ -39,7 +39,9 @@ lazy val dependencies = {
 
   Seq(
     libraryDependencies ++= Seq(
-      io.scalaland.chimney
+      org.typelevel.catsCore,
+      io.scalaland.chimney,
+      io.scalaland.chimneyCats
     ),
     libraryDependencies ++= Seq(
       com.github.alexarchambault.`scalacheck-shapeless_1.14`,
