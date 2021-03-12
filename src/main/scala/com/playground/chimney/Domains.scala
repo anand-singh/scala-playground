@@ -12,7 +12,12 @@ object Domains {
     )
   )
 
-  final case class Profile(name: Profile.Name, email: Profile.Email, age: Profile.Age, address: Address)
+  final case class Profile(
+      name: Profile.Name,
+      email: Profile.Email,
+      age: Profile.Age,
+      address: Address
+    )
 
   case object Profile {
     final case class Name(value: String) extends AnyVal {
@@ -27,7 +32,12 @@ object Domains {
       override def productPrefix: String = s"$Profile.$Age"
     }
 
-    final case class Raw(name: String, email: String, age: Int, address: Address.Raw) {
+    final case class Raw(
+        name: String,
+        email: String,
+        age: Int,
+        address: Address.Raw
+      ) {
       override def productPrefix: String = s"$Profile.$Raw"
     }
   }

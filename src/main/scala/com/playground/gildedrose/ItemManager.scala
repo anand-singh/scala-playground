@@ -1,5 +1,3 @@
 package com.playground.gildedrose
 
-class ItemManager {
-
-}
+class ItemManager {}
