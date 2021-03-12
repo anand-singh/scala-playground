@@ -7,7 +7,7 @@ object PasswordHash {
     import java.security.MessageDigest
     val md = MessageDigest.getInstance("MD5")
     val digest = md.digest(s.getBytes)
-    val bigInt = new BigInteger(1,digest)
+    val bigInt = new BigInteger(1, digest)
     bigInt.toString(16)
   }
 
