@@ -6,6 +6,7 @@ addCommandAlias("c", "compile")
 addCommandAlias("ca", "test:compile")
 addCommandAlias("t", "test")
 addCommandAlias("r", "run")
+addCommandAlias("fmt", ";scalafmtSbt;scalafmt;test:scalafmt")
 addCommandAlias(
   "up2date",
   "reload plugins; dependencyUpdates; reload return; dependencyUpdates"
@@ -22,5 +23,6 @@ onLoadMessage +=
       |${styled("ca")}      │ compile all
       |${styled("t")}       │ test
       |${styled("r")}       │ run
+      |${styled("fmt")}     │ scalafmt
       |${styled("up2date")} │ dependencyUpdates
       |────────┴──────────────────""".stripMargin
