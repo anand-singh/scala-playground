@@ -1,4 +1,5 @@
-# scala-playground
+# scala-playground [![Codeship Status for anand-singh/scala-playground](https://app.codeship.com/projects/d287d98a-92a3-4f76-a8b0-99fa3352e6c9/status?branch=master)](https://app.codeship.com/projects/435024)
+
 A basic SBT project to play around Scala
 
 ### 1. Chimney - `com.playground.chimney`
