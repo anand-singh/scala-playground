@@ -1,4 +1,4 @@
-import Util._
+import SbtUtil._
 
 addCommandAlias("cd", "project")
 addCommandAlias("root", "cd scala-playground")
@@ -7,10 +7,7 @@ addCommandAlias("ca", "test:compile")
 addCommandAlias("t", "test")
 addCommandAlias("r", "run")
 addCommandAlias("fmt", ";scalafmtSbt;scalafmt;test:scalafmt")
-addCommandAlias(
-  "up2date",
-  "reload plugins; dependencyUpdates; reload return; dependencyUpdates"
-)
+addCommandAlias("up2date", "reload plugins; dependencyUpdates; reload return; dependencyUpdates")
 
 onLoadMessage +=
   s"""|

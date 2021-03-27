@@ -1,9 +1,6 @@
 package com.playground.chimney
 
-import com.playground.chimney.CatsIntegration.{
-  RegisteredUser,
-  RegistrationForm
-}
+import com.playground.chimney.CatsIntegration.{ RegisteredUser, RegistrationForm }
 import com.playground.chimney.util.PasswordHash
 import io.scalaland.chimney._
 import io.scalaland.chimney.dsl._
@@ -12,8 +9,7 @@ object EitherTransformation {
 
   type EitherVecStr[+X] = Either[Vector[String], X]
 
-  implicit val eitherTransformer
-      : TransformerF[EitherVecStr, RegistrationForm, RegisteredUser] =
+  implicit val eitherTransformer: TransformerF[EitherVecStr, RegistrationForm, RegisteredUser] =
     Transformer
       .defineF[EitherVecStr, RegistrationForm, RegisteredUser]
       .withFieldComputedF(
