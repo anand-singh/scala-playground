@@ -25,12 +25,8 @@ lazy val commonSettings = {
     addCompilerPlugin(org.augustjune.`context-applied`),
     addCompilerPlugin(org.typelevel.`kind-projector`),
     update / evictionWarningOptions := EvictionWarningOptions.empty,
-    Compile / console / scalacOptions --= Seq(
-      "-Wunused:_",
-      "-Xfatal-warnings"
-    ),
-    Test / console / scalacOptions :=
-      (Compile / console / scalacOptions).value
+    Compile / console / scalacOptions --= Seq("-Wunused:_", "-Xfatal-warnings"),
+    Test / console / scalacOptions := (Compile / console / scalacOptions).value
   )
 }
 
