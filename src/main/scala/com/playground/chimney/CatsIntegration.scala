@@ -8,14 +8,14 @@ import io.scalaland.chimney.dsl._
 
 object CatsIntegration {
 
-  case class RegistrationForm(
+  final case class RegistrationForm(
       email: String,
       username: String,
       password: String,
       age: String
     )
 
-  case class RegisteredUser(
+  final case class RegisteredUser(
       email: String,
       username: String,
       passwordHash: String,
@@ -64,8 +64,7 @@ object CatsIntegration {
 
   val regForm: RegistrationForm =
     RegistrationForm("john@example.com", "John", "password", "20")
-  val regUser: Validated[NonEmptyChain[String], RegisteredUser] =
-    regForm.transformIntoF[Validated[NonEmptyChain[String], +*], RegisteredUser]
+  val regUser: Validated[NonEmptyChain[String], RegisteredUser] = regForm.transformIntoF[Validated[NonEmptyChain[String], +*], RegisteredUser]
   println(regForm)
   println(regUser)
 

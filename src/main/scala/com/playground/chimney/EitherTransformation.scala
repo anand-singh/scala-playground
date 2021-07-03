@@ -41,8 +41,7 @@ object EitherTransformation {
 
   val regForm: RegistrationForm =
     RegistrationForm("john@example.com", "John", "password", "20")
-  val regUser: EitherVecStr[RegisteredUser] =
-    regForm.transformIntoF[EitherVecStr, RegisteredUser]
+  val regUser: EitherVecStr[RegisteredUser] = regForm.transformIntoF[EitherVecStr, RegisteredUser]
   println(regForm)
   println(regUser)
 

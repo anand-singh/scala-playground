@@ -28,8 +28,7 @@ ThisBuild / lint := {
     Seq.empty
 }
 
-ThisBuild / shouldLint :=
-  insideCI.value || lintOn.value
+ThisBuild / shouldLint := insideCI.value || lintOn.value
 
 ThisBuild / wartremoverWarnings := {
   if (shouldLint.value)
@@ -40,3 +39,5 @@ ThisBuild / wartremoverWarnings := {
   else
     (ThisBuild / wartremoverWarnings).value
 }
+
+wartremoverExcluded += baseDirectory.value / "src" / "main" / "scala" / "com"
