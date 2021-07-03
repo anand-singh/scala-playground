@@ -1,10 +1,10 @@
 package com.playground.chimney
 
-import cats.data.{ NonEmptyChain, Validated }
+import cats.data._
 import com.playground.chimney.util.PasswordHash
+import io.scalaland.chimney._
 import io.scalaland.chimney.cats._
 import io.scalaland.chimney.dsl._
-import io.scalaland.chimney.{ Transformer, TransformerF }
 
 object CatsIntegration {
 

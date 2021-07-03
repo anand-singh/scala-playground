@@ -8,15 +8,15 @@ object Domains {
     age = 35,
     address = Address.Raw(
       street = Street.Raw("3rd Ave", "55"),
-      city = City.Raw("Amsterdam", "1111ZE")
-    )
+      city = City.Raw("Amsterdam", "1111ZE"),
+    ),
   )
 
   final case class Profile(
       name: Profile.Name,
       email: Profile.Email,
       age: Profile.Age,
-      address: Address
+      address: Address,
     )
 
   case object Profile {
@@ -36,7 +36,7 @@ object Domains {
         name: String,
         email: String,
         age: Int,
-        address: Address.Raw
+        address: Address.Raw,
       ) {
       override def productPrefix: String = s"$Profile.$Raw"
     }

@@ -1,6 +1,6 @@
 package com.playground.chimney
 
-import com.playground.chimney.CatsIntegration.{ RegisteredUser, RegistrationForm }
+import com.playground.chimney.CatsIntegration._
 import com.playground.chimney.util.PasswordHash
 import io.scalaland.chimney._
 import io.scalaland.chimney.dsl._

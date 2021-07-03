@@ -20,8 +20,8 @@ object Main extends App {
       age: Int
     )
 
-  val form = Form("James", "Ward", "j@w.com", 28)
-  val user = form.transformInto[User]
+  val form: Form = Form("James", "Ward", "j@w.com", 28)
+  val user: User = form.transformInto[User]
 
   println(form)
   println(user)

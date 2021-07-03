@@ -6,6 +6,10 @@ object Dependencies {
       case object alexarchambault {
         val `scalacheck-shapeless_1.14` = "com.github.alexarchambault" %% "scalacheck-shapeless_1.14" % "1.2.5"
       }
+
+      case object liancheng {
+        val `organize-imports` = "com.github.liancheng" %% "organize-imports" % "0.5.0"
+      }
     }
 
     case object olegpy {
@@ -32,7 +36,7 @@ object Dependencies {
 
     case object typelevel {
       val `discipline-scalatest` = "org.typelevel" %% "discipline-scalatest" % "2.1.4"
-      val `kind-projector`       = "org.typelevel" %% "kind-projector"       % "0.11.3" cross CrossVersion.full
+      val `kind-projector`       = "org.typelevel" %% "kind-projector"       % "0.13.0" cross CrossVersion.full
       val catsCore               = "org.typelevel" %% "cats-core"            % "2.6.0"
     }
   }
