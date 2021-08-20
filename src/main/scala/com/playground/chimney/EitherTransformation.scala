@@ -22,7 +22,7 @@ object EitherTransformation {
               Vector(
                 s"${form.username}'s email: does not contain '@' character"
               )
-            )
+            ),
       )
       .withFieldComputed(_.passwordHash, form => PasswordHash(form.password))
       .withFieldComputedF(
@@ -35,7 +35,7 @@ object EitherTransformation {
                 Vector(s"${form.username}'s age: must have at least 18 years")
               )
             case None => Left(Vector(s"${form.username}'s age: invalid number"))
-          }
+          },
       )
       .buildTransformer
 
