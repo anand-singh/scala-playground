@@ -1,5 +1,5 @@
-ThisBuild / scalaVersion := "2.12.14"
-ThisBuild / useSuperShell := false
+ThisBuild / scalaVersion    := "2.12.14"
+ThisBuild / useSuperShell   := false
 ThisBuild / autoStartServer := false
 
 update / evictionWarningOptions := EvictionWarningOptions.empty

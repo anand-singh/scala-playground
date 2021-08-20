@@ -10,14 +10,14 @@ object Main extends App {
       firstName: String,
       lastName: String,
       email: String,
-      age: Int
+      age: Int,
     )
 
   final case class User(
       firstName: String,
       lastName: String,
       email: String,
-      age: Int
+      age: Int,
     )
 
   val form: Form = Form("James", "Ward", "j@w.com", 28)
