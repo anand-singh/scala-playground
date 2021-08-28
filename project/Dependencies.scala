@@ -36,7 +36,7 @@ object Dependencies {
 
     case object typelevel {
       val `discipline-scalatest` = "org.typelevel" %% "discipline-scalatest" % "2.1.5"
-      val `kind-projector`       = "org.typelevel" %% "kind-projector"       % "0.13.0" cross CrossVersion.full
+      val `kind-projector`       = "org.typelevel" %% "kind-projector"       % "0.13.1" cross CrossVersion.full
       val catsCore               = "org.typelevel" %% "cats-core"            % "2.6.1"
     }
   }
