@@ -8,7 +8,7 @@ object Dependencies {
       }
 
       case object liancheng {
-        val `organize-imports` = "com.github.liancheng" %% "organize-imports" % "0.5.0"
+        val `organize-imports` = "com.github.liancheng" %% "organize-imports" % "0.6.0"
       }
     }
 
@@ -37,7 +37,7 @@ object Dependencies {
     case object typelevel {
       val `discipline-scalatest` = "org.typelevel" %% "discipline-scalatest" % "2.1.5"
       val `kind-projector`       = "org.typelevel" %% "kind-projector"       % "0.13.2" cross CrossVersion.full
-      val catsCore               = "org.typelevel" %% "cats-core"            % "2.6.1"
+      val catsCore               = "org.typelevel" %% "cats-core"            % "2.7.0"
     }
   }
 
