@@ -1,5 +1,5 @@
 ThisBuild / organization := "playground"
-ThisBuild / scalaVersion := "2.13.9"
+ThisBuild / scalaVersion := "2.13.10"
 
 lazy val `scala-playground` =
   project
