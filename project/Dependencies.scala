@@ -43,8 +43,8 @@ object Dependencies {
 
   case object io {
     case object scalaland {
-      val chimney     = "io.scalaland" %% "chimney"      % "0.6.2"
-      val chimneyCats = "io.scalaland" %% "chimney-cats" % "0.6.2"
+      val chimney     = "io.scalaland" %% "chimney"      % "0.8.3"
+      val chimneyCats = "io.scalaland" %% "chimney-cats" % "0.8.3"
     }
   }
 }
